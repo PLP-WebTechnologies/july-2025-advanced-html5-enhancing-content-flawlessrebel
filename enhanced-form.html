@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 2 Assignment</title>
+    </head>
+    <body>
+        <h1>Advanced HTML5 Elements</h1>
+        <h2>Definition Lists</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+        <h2>Nested Lists</h2>
+        <ol>
+            <li>Snacks
+                <ol type="a">
+                    <li>Crisps</li>
+                    <li>Biscuits</li>
+                    <li>Popcorn</li>
+                </ol>
+            </li>
+            <li>Clothing
+                <ul>
+                    <li>Dresses</li>
+                    <li>Shirts</li>
+                    <li>Trousers</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Table</h2>
+        <table border="1">
+             <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email address</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ethan Ashiono</td>
+                    <td>ethan20@gmail.com</td>
+                    <td>Medicine & Surgery</td>
+                </tr>
+                <tr>
+                    <td>David Kibor</td>
+                    <td>david16@gmail.com</td>
+                    <td>Software Engineering</td>
+                </tr>
+                <tr>
+                    <td>Anastacia Chemutai</td>
+                    <td>mukung05@gmail.com</td>
+                    <td>Law</td>
+                </tr>
+            </tbody>
+        </table>
+           <h2>Media</h2>
+            <h3>Images</h3>
+            <img src="https://images.pexels.com/photos/34206665/pexels-photo-34206665.png" width="200" height="300" alt="wedding photo">
+             <h3>Audio</h3>
+        <audio controls>
+            <source src="" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+        <h3>Video</h3>
+        <video width="500" height="350">
+            <source src="https://www.pexels.com/download/video/33996206/" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <h2>Forms</h2>
+       <h2>User Registration Form</h2>
+        <form action="/submit" method="post">
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+          <br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required autocomplete="on">
+          <br><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+          <br><br>
+          <label for="age">Age:</label><br>
+          <input type="number" id="age" name="age" min="18" max="100" step="1" required>
+          <br><br>
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" pattern="[A-Za-z0-9_]{4,15}" title="4-15 letters, numbers or underscores"><br><br>
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+          <br><br>
+          <label for="resume">Upload Files:</label><br>
+          <input type="file" id="resume" name="resume" multiple>
+          <br><br>
+          <label for="country">Country:</label><br>
+          <input type="text" id="country" name="country" value="Kenya" readonly>
+          <br><br>
+          <label for="discount">Discount Code (disabled):</label><br>
+          <input type="text" id="discount" name="discount" disabled value="N/A">
+          <br><br>
+          <input type="submit" value="Register">
+          <input type="reset" value="Clear Form">
+          <input type="submit" value="Submit Without Validation" formnovalidate>
+
+        </form> 
+    </body>
+</html>
